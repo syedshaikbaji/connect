@@ -1,0 +1,119 @@
+/* Info:start otable styles */
+.otable-wrapper{
+    width: 100%;
+    overflow-x: auto;
+}
+.otable {
+    --oth-border-width: 1px;
+    --oth-border-color: rgba(195, 195, 195, 1);
+    --oth-border-style-top: solid;
+    --oth-border-style-right: inset;
+    --otr-border-bottom: solid 1px #E0E0E0;
+}
+
+.otable,
+.othead,
+.otbody,
+.otfoot,
+.otr,
+.otr-tdies,
+.otr-columns,
+.otr-columns-wrapper,
+.otr-additional-related-content {
+    width: 100%;
+}
+
+.othead {
+    display: flex;
+    align-items: center;
+    background-color: rgba(232, 232, 232, 1);
+}
+
+.otr,
+.otr-tdies,
+.otr-columns,
+.otr-columns-wrapper {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.otr:not(.othead>.otr) {
+    border-bottom: var(--otr-border-bottom);
+}
+
+.oth,
+.ocolumn-head {
+    color: rgba(0, 0, 0, 1);
+    font-family: var(--font-family-one);
+    font-size: 12px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 0px;
+    text-align: left;
+    line-height: 16px;
+    text-transform: uppercase;
+    border: inset 1px rgba(195, 195, 195, 0);
+    border-top: var(--oth-border-style-top) var(--oth-border-width) var(--oth-border-color);
+    border-bottom: var(--oth-border-style-top) var(--oth-border-width) var(--oth-border-color);
+    padding: 8px 4px;
+}
+
+.otd,
+.ocolumn {
+    color: #4a4a4a;
+    font-family: var(--font-family-one);
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0px;
+    text-align: left;
+    line-height: 18px;
+    padding: 8px 4px;
+}
+
+.oth:not(:last-child) {
+    border-right: var(--oth-border-style-right) var(--oth-border-width) var(--oth-border-color);
+}
+
+.otr.expanded {
+    border: 1px solid rgba(171, 158, 255, 1);
+    box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.11734);
+    opacity: 1;
+    background-color: rgba(232, 228, 255, 1);
+}
+.otr-additional-related-content{
+    display: none;
+}
+/* Info:end otable styles */
+.employeemaster--inside-table .othead {
+    background-color: rgba(125, 107, 238, 1);
+}
+
+.employeemaster--inside-table .oth {
+    color: rgba(255, 255, 255, 1);
+    font-family: var(--font-family-one);
+    font-size: 12px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 0px;
+    text-align: left;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+.employeemaster--inside-table .otr {
+    background-color: rgba(242, 239, 255, 1);
+}
+
+.employeemaster--inside-table .otd {
+    color: #4a4a4a;
+    font-family: var(--font-family-one);
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0px;
+    text-align: left;
+    line-height: 18px;
+    padding: 12px 6px;
+}

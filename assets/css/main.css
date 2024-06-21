@@ -1,0 +1,258 @@
+:root {}
+
+.text-color-green {
+    color: #00A156;
+}
+
+.text-color-dblue {
+    color: #585B72;
+}
+
+.omne-card.attendance-timesheet-card {
+    box-shadow: 0 0 0 transparent !important;
+}
+
+.omne-card.attendance-timesheet-card h4,
+h4 {
+    color: rgba(0, 0, 0, 1);
+    font-family: 'Neue Machina';
+    font-size: 16px;
+    font-weight: 900;
+    font-style: Ultrabold;
+    letter-spacing: 0px;
+    text-align: left;
+    line-height: 20px;
+}
+
+.attendance-timesheet-table span.status,
+.attendance-timesheet-table span.imgsrc,
+.attendance-timesheet-table span.status-date {
+    display: block;
+    width: 100%;
+}
+
+.attendance-timesheet-table span.status {
+    color: rgba(0, 161, 86, 1);
+    font-family: 'Helvetica Neue';
+    font-size: 14px;
+    font-weight: 500;
+    font-style: Medium;
+    letter-spacing: 0px;
+    text-align: left;
+    line-height: 18px;
+}
+
+.attendance-timesheet-table span.imgsrc {
+    color: rgba(74, 74, 74, 1);
+    font-family: 'Helvetica Neue';
+    font-size: 14px;
+    font-weight: 400;
+    font-style: Regular;
+    letter-spacing: 0px;
+    text-align: left;
+    line-height: 18px;
+}
+
+.attendance-timesheet-table span.status-date {
+    color: rgba(136, 136, 136, 1);
+    font-family: 'Helvetica Neue';
+    font-size: 14px;
+    font-weight: 400;
+    font-style: Regular;
+    letter-spacing: 0px;
+    text-align: left;
+    line-height: 18px;
+}
+
+/* f4f4f4 */
+/* .xre_table table tbody tr td, */
+.xre_table table thead tr th {
+    padding: 11px 8px !important;
+}
+
+.xre_table table thead tr th {
+    background: #f4f4f4;
+    border: solid 0.5px #D3D3D3;
+}
+
+.xre_table table tbody tr td {
+    font-size: 14px;
+    font-weight: normal;
+    border: solid 0.5px #D3D3D3;
+    padding: 5px;
+    /* position: relative; */
+}
+
+.remarks-col textarea {
+    text-align: left;
+    font-size: 14px;
+}
+
+.weekend-date {
+    color: rgba(114, 96, 227, 1) !important;
+    font-family: "Helvetica Neue";
+    font-size: 14px;
+    font-weight: 500;
+    font-style: Medium;
+    letter-spacing: 0px;
+    text-align: left;
+    line-height: 18px;
+}
+
+.checkit {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    accent-color: #6651E6;
+}
+
+.checkit-sm {
+    width: 14px;
+    height: 15px;
+}
+
+.attendance-timesheet-table .status-col .form-group {
+    /* display: inline; */
+    max-width: 100px;
+    margin: auto !important;
+}
+
+.form-control:disabled,
+.form-control[readonly] {
+    background-color: #e7e7e7 !important;
+    opacity: 1;
+}
+
+.bg-none {
+    background: none !important;
+}
+
+
+.xre_table.toottip-table table thead tr th {
+    padding: 3px 5px !important;
+    border-right: 1px solid #d3d3d3 !important;
+}
+
+.custom-checkbox {
+    margin: 0;
+}
+
+.custom-checkbox input {
+    display: none;
+}
+
+.custom-checkbox span {
+    border: 1px solid #4a4a4a;
+    float: left;
+    height: 20px;
+    width: 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-checkbox:hover span,
+.custom-checkbox input:checked+span {
+    border: 1px solid #6651E6;
+}
+
+.custom-checkbox input:checked+span:before {
+    content: "✔";
+    color: #6651E6;
+    top: 2px;
+    position: relative;
+}
+
+.checkbox-sm span {
+    width: 14px;
+    height: 14px;
+    font-size: 11px;
+}
+
+/* Info:start switch button styles */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 28px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ADA9B8;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 4px;
+    bottom: 3.5px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.switch input:checked+.slider {
+    background-color: #6651E6;
+}
+
+.switch input:focus+.slider {
+    box-shadow: 0 0 1px #6651E6;
+}
+
+.switch input:checked+.slider:before {
+    -webkit-transform: translateX(30px);
+    -ms-transform: translateX(30px);
+    transform: translateX(30px);
+}
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.slider.has-tickmark {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10px;
+    color: white;
+}
+.switch-slider-input{
+    color: rgba(74, 74, 74, 1);
+    font-family: "Helvetica Neue";
+    font-size: 16px;
+    font-weight: 400;
+    font-style: Regular;
+    letter-spacing: 0px;
+    text-align: left;
+    line-height: 28px;
+    vertical-align: bottom;
+}
+/* Info:end switch button styles */
+
+.yellowStripSection label{
+    color: #666666;
+}
+/* .yellowStripSection label+span{
+    color: #4A4A4A;
+} */

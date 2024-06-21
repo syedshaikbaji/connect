@@ -1,0 +1,101 @@
+/* Info: omne Icon minimum styles */
+.oicon {
+  --oicon-sm: 16px;
+  --oicon-mdsm: 20px;
+  --oicon-md: 24px;
+  --oicon-lgmd: 28px;
+  --oicon-lg: 32px;
+  --oicon-xlg: 40px;
+  --oicon-wh: 1em;
+  position: relative;
+  background-position: center center;
+  background-size: contain;
+}
+
+.oicon img,
+.oicon {
+  width: var(--oicon-wh);
+  height: var(--oicon-wh);
+}
+
+.oicon-sm img,
+.oicon-sm {
+  display: inline-block;
+  width: var(--oicon-sm);
+  height: var(--oicon-sm);
+  background-size: var(--oicon-sm) var(--oicon-sm);
+  background-position: center center;
+}
+
+.oicon-mdsm img,
+.oicon-mdsm {
+  display: inline-block;
+  width: var(--oicon-mdsm);
+  height: var(--oicon-mdsm);
+  background-size: var(--oicon-mdsm) var(--oicon-mdsm);
+  background-position: center center;
+}
+
+.oicon-md img,
+.oicon-md {
+  display: inline-block;
+  width: var(--oicon-md);
+  height: var(--oicon-md);
+  background-size: var(--oicon-md) var(--oicon-md);
+  background-position: center center;
+}
+
+.oicon-lgmd img,
+.oicon-lgmd {
+  display: inline-block;
+  width: var(--oicon-lgmd);
+  height: var(--oicon-lgmd);
+  background-size: var(--oicon-lgmd) var(--oicon-lgmd);
+  background-position: center center;
+}
+
+.oicon-lg img,
+.oicon-lg {
+  display: inline-block;
+  width: var(--oicon-lg);
+  height: var(--oicon-lg);
+  background-size: var(--oicon-lg) var(--oicon-lg);
+  background-position: center center;
+}
+
+.oicon-xlg img,
+.oicon-xlg {
+  display: inline-block;
+  width: var(--oicon-xlg);
+  height: var(--oicon-xlg);
+  background-size: var(--oicon-xlg) var(--oicon-xlg);
+  background-position: center center;
+}
+
+/* Info: omne Icon minimum styles END */
+/* Info: Icon background images styles */
+.oicon-synchronize {
+  background-image: url("../images/icons/ic_synchronize.svg");
+}
+
+.oicon-activitylog {
+  background-image: url("../images/icons/ic_activitylog.svg");
+}
+
+.oicon-sendmail {
+  background-image: url("../images/icons/ic_sendmail.svg");
+}
+
+.oicon-viewsupportingdocs {
+  background-image: url("../images/icons/ic_viewsupportingdocuments.svg");
+}
+
+.oicon-copy-before {
+  background-image: url("../images/icons/icon-copy-before.svg");
+}
+
+.oicon-copy-after {
+  background-image: url("../images/icons/icon-copy-after.svg");
+}
+
+/* Info: Icon background images styles END */

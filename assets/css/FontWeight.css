@@ -1,0 +1,158 @@
+/* Info: font weight START */
+.text-bold {
+    font-weight: bold;
+}
+.extra-light-200, .font-weight-200 {
+    font-weight: 200;
+}
+.light-300, .font-weight-300 {
+    font-weight: 300;
+}
+.regular-400, .font-weight-400 {
+    font-weight: 400;
+}
+.medium-500, .font-weight-500 {
+    font-weight: 500;
+}
+.semi-bold-600, .font-weight-600 {
+    font-weight: 600;
+}
+.bold-700, .font-weight-700 {
+    font-weight: 700;
+}
+.extra-bold-800, .font-weight-800 {
+    font-weight: 800;
+}
+.black-900, .font-weight-900 {
+    font-weight: 900;
+}
+@media (min-width: 576px) {
+    .extra-light-sm-200, .font-weight-sm-200 {
+        font-weight: 200;
+    }
+    .light-sm-300, .font-weight-sm-300 {
+        font-weight: 300;
+    }
+    .regular-sm-400, .font-weight-sm-400 {
+        font-weight: 400;
+    }
+    .medium-sm-500, .font-weight-sm-500 {
+        font-weight: 500;
+    }
+    .semi-sm-bold-600, .font-weight-sm-600 {
+        font-weight: 600;
+    }
+    .bold-sm-700, .font-weight-sm-700 {
+        font-weight: 700;
+    }
+    .extra-sm-bold-800, .font-weight-sm-800 {
+        font-weight: 800;
+    }
+    .black-sm-900, .font-weight-sm-900 {
+        font-weight: 900;
+    }
+}
+@media (min-width: 768px) {
+    .extra-light-md-200, .font-weight-md-200 {
+        font-weight: 200;
+    }
+    .light-md-300, .font-weight-md-300 {
+        font-weight: 300;
+    }
+    .regular-md-400, .font-weight-md-400 {
+        font-weight: 400;
+    }
+    .medium-md-500, .font-weight-md-500 {
+        font-weight: 500;
+    }
+    .semi-md-bold-600, .font-weight-md-600 {
+        font-weight: 600;
+    }
+    .bold-md-700, .font-weight-md-700 {
+        font-weight: 700;
+    }
+    .extra-md-bold-800, .font-weight-md-800 {
+        font-weight: 800;
+    }
+    .black-md-900, .font-weight-md-900 {
+        font-weight: 900;
+    }
+}
+@media (min-width: 992px) {
+    .extra-light-lg-200, .font-weight-lg-200 {
+        font-weight: 200;
+    }
+    .light-lg-300, .font-weight-lg-300 {
+        font-weight: 300;
+    }
+    .regular-lg-400, .font-weight-lg-400 {
+        font-weight: 400;
+    }
+    .medium-lg-500, .font-weight-lg-500 {
+        font-weight: 500;
+    }
+    .semi-lg-bold-600, .font-weight-lg-600 {
+        font-weight: 600;
+    }
+    .bold-lg-700, .font-weight-lg-700 {
+        font-weight: 700;
+    }
+    .extra-lg-bold-800, .font-weight-lg-800 {
+        font-weight: 800;
+    }
+    .black-lg-900, .font-weight-lg-900 {
+        font-weight: 900;
+    }
+}
+@media (min-width: 1200px) {
+    .extra-light-xl-200, .font-weight-xl-200 {
+        font-weight: 200;
+    }
+    .light-xl-300, .font-weight-xl-300 {
+        font-weight: 300;
+    }
+    .regular-xl-400, .font-weight-xl-400 {
+        font-weight: 400;
+    }
+    .medium-xl-500, .font-weight-xl-500 {
+        font-weight: 500;
+    }
+    .semi-xl-bold-600, .font-weight-xl-600 {
+        font-weight: 600;
+    }
+    .bold-xl-700, .font-weight-xl-700 {
+        font-weight: 700;
+    }
+    .extra-xl-bold-800, .font-weight-xl-800 {
+        font-weight: 800;
+    }
+    .black-xl-900, .font-weight-xl-900 {
+        font-weight: 900;
+    }
+}
+@media (min-width: 1400px) {
+    .extra-light-xxl-200, .font-weight-xxl-200 {
+        font-weight: 200;
+    }
+    .light-xxl-300, .font-weight-xxl-300 {
+        font-weight: 300;
+    }
+    .regular-xxl-400, .font-weight-xxl-400 {
+        font-weight: 400;
+    }
+    .medium-xxl-500, .font-weight-xxl-500 {
+        font-weight: 500;
+    }
+    .semi-xxl-bold-600, .font-weight-xxl-600 {
+        font-weight: 600;
+    }
+    .bold-xxl-700, .font-weight-xxl-700 {
+        font-weight: 700;
+    }
+    .extra-xxl-bold-800, .font-weight-xxl-800 {
+        font-weight: 800;
+    }
+    .black-xxl-900, .font-weight-xxl-900 {
+        font-weight: 900;
+    }
+}

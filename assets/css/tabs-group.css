@@ -1,0 +1,13 @@
+.tabs-group {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+div[data-content] {
+  display: none;
+}
+
+div[data-tab].active,
+div[data-content].active {
+  display: block;
+}

@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Timesheet</title>
+  <!-- <base href="/" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/x-icon" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="preload" href="assets/fonts/HelveticaNeue-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" /> -->
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" /> -->
+  <link rel="stylesheet" href="./assets/css/fontawesome6/css/all.css">
+
+  <!----------bootstrap-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  <link href="assets/css/style.css" rel="stylesheet" />
+  <link href="assets/css/main.css" rel="stylesheet" />
+  <link href="assets/css/obtn.css" rel="stylesheet" />
+  <link href="assets/css/FontSize.css" rel="stylesheet" />
+  <link href="assets/css/colfw-styles.css" rel="stylesheet" />
+  <link href="assets/css/omne-card-N-summary-N-full-details-card.css" rel="stylesheet" />
+  <link href="assets/css/form-group.css" rel="stylesheet" />
+
+
+</head>
+
+<body class="pro_xre">
+  <section class="navigation-section">
+    <div class="omne_bar">
+      <div class="custom_container">
+        <div class="tab_logo d-flex align-items-center justify-content-center mr-3"> <img
+            src="assets/images/A_shape.svg" title="omne_with_tagline_rgb" /></div>
+        <img src="assets/images/logo.svg" title="omne_with_tagline_rgb" class="mr-3" />
+        <img src="assets/images/tagline_rgb.svg" title="omne_with_tagline_rgb" />
+      </div>
+      <!-- top omne bar -->
+
+      <!-- main nav bar -->
+      <div class="nav_menu p-0">
+        <div class="custom_menu">
+          <div class="row">
+            <div class="tab_title text_18 font_600 px-3  ml-0 d-flex align-items-center justify-content-center">
+              Timesheet
+            </div>
+            <div class="page_title text_16 font_500 px-3 d-flex align-items-center">
+              <nav class="navbar navbar-expand-sm bg-white p-0 timesheet-nav">
+
+                <!-- Links -->
+                <ul class="navbar-nav main-menu">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="" id="navbarDropdownMenuLink"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Timecards
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">Individual TS</a></li>
+                      <li><a class="dropdown-item" href="#">Billing TS</a></li>
+                      <li><a class="dropdown-item" href="#">Time-Off Hrs</a></li>
+                      <li><a class="dropdown-item" href="#">Payroll TS</a></li>
+                      <li><a class="dropdown-item" href="#">Admin TS</a></li>
+                      <li><a class="dropdown-item" href="#">Fax TS</a></li>
+                      <li><a class="dropdown-item" href="#">NS-Past 4 week</a></li>
+                      <li><a class="dropdown-item" href="#">Multiple Projects</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle " href="" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">
+                      Status & Activities
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">TS Summary</a></li>
+                      <li><a class="dropdown-item" href="#">Pre-Approved TS</a></li>
+                      <li><a class="dropdown-item" href="#">Free Billing</a></li>
+                      <li><a class="dropdown-item" href="Ts-Corretions.html">TS Corrections</a></li>
+                      <li><a class="dropdown-item" href="#">Audit Payproblems</a></li>
+                      <li><a class="dropdown-item" href="#">TS-Sol Mismatch Hours</a></li>
+                      <li><a class="dropdown-item" href="#">M2M Timecards</a></li>
+                    </ul>
+                  </li>
+
+
+                </ul>
+
+              </nav>
+            </div>
+            <div class="nav-items">
+              <ul>
+                <li>
+                  <!-- <div class="form-group m-0">
+                    <span class="has-icon">
+                      <select class="form-control required px-2 py-2" name="" id="SelectDocument">
+                        <option value="">Mexico</option>
+                        <option value="">Success</option>
+                        <option value="">Rejected</option>
+                      </select>
+                      <i class="con fa-regular fa-angle-down pr-2"></i>
+                    </span>
+                  </div> -->
+                  <div class="dropdown">
+                    <button class="btn dropdown-toggle btn-outline toggleBtn" type="button" id="dropdownMenu2"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Mexico
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                      <button class="dropdown-item" type="button">Mexico</button>
+                      <button class="dropdown-item" type="button">London</button>
+                      <button class="dropdown-item" type="button">Norway</button>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa-regular fa-gear"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa-regular fa-bell"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="assets/images/user.svg" class="profileImage" alt="ic-login-profile-image" />
+                  </a>
+                </li>
+                <!-- <li>
+                  <a href="">
+                    <button class="obtn obtn-primary obtn-sm" (click)="logout()">Logout</button>
+                  </a>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="maincontent-section">
+    <article class="im-dashboad lc_main_content">
+      <div class="maps-main-container-card css_height card imcard imcard-radius col-lg-12">
+        <div class="bg-white col-lg-12 p-0">
+          <!-----------breadcum--------->
+          <div class="full-details-header col-lg-12 d-flex flex-wrap justify-content-start pt-3  px-0">
+            <ol class="breadcrumb m-0 bg-none col-lg-4 p-0">
+              <li class="breadcrumb-item">
+                <a class="text-color-theme font-weight-medium font-16" href="index.html">Individual TS</a>
+              </li>
+              <li class="breadcrumb-item f-16 font-weight-medium"><a class="text-black" href="#">Timecards</a></li>
+            </ol>
+            <div class="mt-1 col-2 text-right">
+              Weekending
+            </div>
+            <div class="form-group col_1 p-0 has-icon">
+              <input class="form-control" type="text" placeholder="Date">
+              <span class="has-icon-con"><i class="fa-solid fa-calendar-days"></i></span>
+            </div>
+            <div class="col-lg-2 mt-1">
+              <a class=" text-color-theme font-weight-medium">Ehris</a>
+            </div>
+            <div>
+              <span class="clrbox green mr-2"></span>Timecard is approved by Client Manager<br>
+              <span class="clrbox red mr-2"></span>Timecard is rejected by Client Manager<br>
+
+            </div>
+
+          </div>
+          <!-----------Heading --------->
+          <div class="d-flex justify-content-between align-items-center themeclrbg py-2 rounded mb-2 mt-2">
+            <div class="col-6 text-black font-weight-bold font-16">Aidana Khankeldieva ( 502270 )</div>
+            <div class="col-6 text-right">
+              <button class="btn obtn obtn-sm obtn-outline ml-2 mr-2">Time-Off</button>
+              <button class="btn obtn obtn-themebtn obtn-sm">Submit</button>
+            </div>
+          </div>
+
+
+          <!-----first table section----->
+          <div class="tableSection">
+            <div class="d-flex justify-content-between align-items-center  py-2 mb-2">
+              <div class="font-weight-medium font-16"><i class="fa-regular fa-buildings mr-1 "></i> Pinnacle-United
+                Airlines, Inc. <span class="text-black">- CW 56667 Platform Operations Data & Process Analysts Managed
+                </span></div>
+              <div class="text-right">
+                <button class="m-0 p-0 border-0 bg-none switch-slider-input">Last timesheet
+                  <label class="switch m-0 mr-3">
+                    <input type="checkbox" checked>
+                    <span class="slider round has-tickmark"><i class="fa-regular fa-check"></i></span>
+                  </label>
+                </button>
+                <button class="btn obtn obtn-sm obtn-outline mr-2">Standard</button>
+                <button class="btn obtn obtn-sm obtn-outline mr-2 mt-2 mt-xl-0">Clear</button>
+              </div>
+            </div>
+            <div class=" yellowStripSection flex-wrap mb-2">
+              <div class="d-flex border-bottom">
+                <div class="mb-2">
+                  <label class="mr-3 mb-0">Status</label>
+                  <span class="text-darktheme font-weight-medium">Active</span>
+                </div>
+                <span class="mx-3">|</span>
+                <div class="mb-2">
+                  <label class="mr-3 mb-0">Start Date</label>
+                  <span class="text-darktheme font-weight-medium">04/08/2024</span>
+                </div>
+                <span class="mx-3">|</span>
+                <div class="mb-2">
+                  <label class="mr-3 mb-0">End Date</label>
+                  <span class="text-darktheme font-weight-medium">04/08/2024</span>
+                </div>
+                <span class="mx-3">|</span>
+                <div class="mb-2">
+                  <label class="mr-3 mb-0">Term Date</label>
+                  <span class="text-darktheme font-weight-medium">04/08/2024</span>
+                </div>
+                <span class="mx-3">|</span>
+                <div class="mb-2">
+                  <label class="mr-3 mb-0">Offboarding Date</label>
+                  <span class="text-darktheme font-weight-medium">04/08/2024</span>
+                </div>
+                <span class="mx-3">|</span>
+                <div class="mb-2">
+                  <label class="mr-3 mb-0">City/State</label>
+                  <span class="text-darktheme font-weight-medium">Fairfax/Virginia</span>
+                </div>
+                <span class="mx-3">|</span>
+                <div class="mb-2">
+                  <label class="mr-3 mb-0">OT Allowed</label>
+                  <span class="text-darktheme font-weight-medium">Yes</span>
+                </div>
+              </div>
+              <!-- <span class="mx-3">|</span> -->
+              <div class="d-flex pt-2">
+                <div class="col-2 pl-0">
+                  <label class="mr-3 mb-0">Daily PO Type</label>
+                  <span class="text-darktheme font-weight-medium">- -</span>
+                </div>
+                <span class="mx-3">|</span>
+                <div class="col-2 pl-0">
+                  <label class="mr-3 mb-0">LOB</label>
+                  <span class="text-darktheme font-weight-medium">- -</span>
+                </div>
+                <span class="mx-3">|</span>
+                <div class="">
+                  <label class="mr-3 mb-0">Workflow Status</label>
+                  <span class="text-darktheme font-weight-medium">Completed</span>
+                </div>
+                <span class="mx-3">|</span>
+                <div class="">
+                  <label class="mr-3 mb-0">Bill Rate</label>
+                  <span class="text-darktheme font-weight-medium">$ 10.00 / hr</span>
+                </div>
+                <span class="mx-3">|</span>
+                <div class="">
+                  <label class="mr-3 mb-0">Pay Rate</label>
+                  <span class="text-darktheme font-weight-medium">$ 10:00/hr</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="table_wrap analysisTable table-responsive">
+              <table class="mb-3 table">
+                <thead>
+                  <tr>
+                    <th class="colw-6 text-center px-2" rowspan="2"></th>
+                    <th class="colw-6 text-center px-2 ">Sun</th>
+                    <th class="colw-6 text-center px-2">Mon</th>
+                    <th class="colw-6 text-center px-2">Tue</th>
+                    <th class="colw-6 text-center px-2">Wed</th>
+                    <th class="colw-6 text-center px-2">Thu</th>
+                    <th class="colw-6 text-center px-2">Fri</th>
+                    <th class="colw-6 text-center px-2">Sat</th>
+                    <th class="colw-6 text-center px-2">Total</th>
+                  </tr>
+                  <tr>
+                    <th class="colw-6 text-center px-2">1/7</th>
+                    <th class="colw-6 text-center px-2 ">2/7</th>
+                    <th class="colw-6 text-center px-2">3/7</th>
+                    <th class="colw-6 text-center px-2">4/7</th>
+                    <th class="colw-6 text-center px-2">5/7</th>
+                    <th class="colw-6 text-center px-2">6/7</th>
+                    <th class="colw-6 text-center px-2">7/7</th>
+                    <th class="colw-6 text-center px-2">Hours/Week</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="approved">
+                    <td class="colw-6 text-left font-weight-medium px-0">
+                      <div class="tableInput form-control tableInputHeader py-1 text-left">ST</div>
+                    </td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput totalInput"
+                        value="0"></td>
+
+                  </tr>
+                  <tr>
+                    <td class="colw-6 text-left font-weight-medium px-0">
+                      <div class="tableInput form-control tableInputHeader py-1 text-left">OT</div>
+                    </td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput totalInput"
+                        value="0"></td>
+
+                  </tr>
+                  <tr>
+                    <td class="colw-6 text-left font-weight-medium px-0">
+                      <div class="tableInput form-control tableInputHeader py-1 text-left">DT</div>
+                    </td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput totalInput"
+                        value="0"></td>
+
+                  </tr>
+
+                  <tr>
+                    <td class="colw-6 text-left font-weight-medium px-0">
+                      <div class="tableInput form-control tableInputHeader py-1 text-left">TT</div>
+                    </td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput totalInput"
+                        value="0"></td>
+
+                  </tr>
+                  <tr>
+                    <td class="colw-6 text-left font-weight-medium px-0">
+                      <div class="tableInput form-control tableInputHeader py-1 text-left mt-2">Notes</div>
+                    </td>
+                    <td class="colw-6 text-left" colspan="8"><input type="text"
+                        class="form-control tableInput text-left mt-2" value="" placeholder="Notes">
+                    </td>
+
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-----second table section----->
+          <div class="tableSection">
+            <div class="d-flex justify-content-between align-items-center  py-2 mb-2">
+              <div class="font-weight-medium font-16"><i class="fa-regular fa-buildings mr-1 "></i> Pinnacle-United
+                Airlines, Inc. <span class="text-black">- CW 56667 Platform Operations Data & Process Analysts Managed
+                </span></div>
+              <div class="text-right">
+                <button class="m-0 p-0 border-0 bg-none switch-slider-input">Last timesheet
+                  <label class="switch m-0 mr-3">
+                    <input type="checkbox" checked>
+                    <span class="slider round has-tickmark"><i class="fa-regular fa-check"></i></span>
+                  </label>
+                </button>
+                <button class="btn obtn obtn-sm obtn-outline mr-2">Standard</button>
+                <button class="btn obtn obtn-sm obtn-outline mr-2 mt-2 mt-xl-0">Clear</button>
+              </div>
+            </div>
+            <div class=" yellowStripSection flex-wrap mb-2">
+              <div class="d-flex border-bottom">
+                <div class="mb-2">
+                  <label class="mr-3 mb-0">Status</label>
+                  <span class="text-darktheme font-weight-medium">Active</span>
+                </div>
+                <span class="mx-3">|</span>
+                <div class="mb-2">
+                  <label class="mr-3 mb-0">Start Date</label>
+                  <span class="text-darktheme font-weight-medium">04/08/2024</span>
+                </div>
+                <span class="mx-3">|</span>
+                <div class="mb-2">
+                  <label class="mr-3 mb-0">End Date</label>
+                  <span class="text-darktheme font-weight-medium">04/08/2024</span>
+                </div>
+                <span class="mx-3">|</span>
+                <div class="mb-2">
+                  <label class="mr-3 mb-0">Term Date</label>
+                  <span class="text-darktheme font-weight-medium">04/08/2024</span>
+                </div>
+                <span class="mx-3">|</span>
+                <div class="mb-2">
+                  <label class="mr-3 mb-0">Offboarding Date</label>
+                  <span class="text-darktheme font-weight-medium">04/08/2024</span>
+                </div>
+                <span class="mx-3">|</span>
+                <div class="mb-2">
+                  <label class="mr-3 mb-0">City/State</label>
+                  <span class="text-darktheme font-weight-medium">Fairfax/Virginia</span>
+                </div>
+                <span class="mx-3">|</span>
+                <div class="mb-2">
+                  <label class="mr-3 mb-0">OT Allowed</label>
+                  <span class="text-darktheme font-weight-medium">Yes</span>
+                </div>
+              </div>
+              <!-- <span class="mx-3">|</span> -->
+              <div class="d-flex pt-2">
+                <div class="col-2 pl-0">
+                  <label class="mr-3 mb-0">Daily PO Type</label>
+                  <span class="text-darktheme font-weight-medium">- -</span>
+                </div>
+                <span class="mx-3">|</span>
+                <div class="col-2 pl-0">
+                  <label class="mr-3 mb-0">LOB</label>
+                  <span class="text-darktheme font-weight-medium">- -</span>
+                </div>
+                <span class="mx-3">|</span>
+                <div class="">
+                  <label class="mr-3 mb-0">Workflow Status</label>
+                  <span class="text-darktheme font-weight-medium">Completed</span>
+                </div>
+                <span class="mx-3">|</span>
+                <div class="">
+                  <label class="mr-3 mb-0">Bill Rate</label>
+                  <span class="text-darktheme font-weight-medium">$ 10.00 / hr</span>
+                </div>
+                <span class="mx-3">|</span>
+                <div class="">
+                  <label class="mr-3 mb-0">Pay Rate</label>
+                  <span class="text-darktheme font-weight-medium">$ 10:00/hr</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="table_wrap analysisTable table-responsive">
+              <table class="mb-3 table">
+                <thead>
+                  <tr>
+                    <th class="colw-6 text-center px-2" rowspan="2"></th>
+                    <th class="colw-6 text-center px-2 ">Sun</th>
+                    <th class="colw-6 text-center px-2">Mon</th>
+                    <th class="colw-6 text-center px-2">Tue</th>
+                    <th class="colw-6 text-center px-2">Wed</th>
+                    <th class="colw-6 text-center px-2">Thu</th>
+                    <th class="colw-6 text-center px-2">Fri</th>
+                    <th class="colw-6 text-center px-2">Sat</th>
+                    <th class="colw-6 text-center px-2">Total</th>
+                  </tr>
+                  <tr>
+                    <th class="colw-6 text-center px-2">1/7</th>
+                    <th class="colw-6 text-center px-2 ">2/7</th>
+                    <th class="colw-6 text-center px-2">3/7</th>
+                    <th class="colw-6 text-center px-2">4/7</th>
+                    <th class="colw-6 text-center px-2">5/7</th>
+                    <th class="colw-6 text-center px-2">6/7</th>
+                    <th class="colw-6 text-center px-2">7/7</th>
+                    <th class="colw-6 text-center px-2">Hours/Week</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="rejected">
+                    <td class="colw-6 text-left font-weight-medium px-0">
+                      <div class="tableInput form-control tableInputHeader py-1 text-left">ST</div>
+                    </td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput totalInput"
+                        value="0"></td>
+
+                  </tr>
+                  <tr>
+                    <td class="colw-6 text-left font-weight-medium px-0">
+                      <div class="tableInput form-control tableInputHeader py-1 text-left">OT</div>
+                    </td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput totalInput"
+                        value="0"></td>
+
+                  </tr>
+                  <tr>
+                    <td class="colw-6 text-left font-weight-medium px-0">
+                      <div class="tableInput form-control tableInputHeader py-1 text-left">DT</div>
+                    </td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput totalInput"
+                        value="0"></td>
+
+                  </tr>
+
+                  <tr>
+                    <td class="colw-6 text-left font-weight-medium px-0">
+                      <div class="tableInput form-control tableInputHeader py-1 text-left">TT</div>
+                    </td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput totalInput"
+                        value="0"></td>
+
+                  </tr>
+                  <tr>
+                    <td class="colw-6 text-left font-weight-medium px-0">
+                      <div class="tableInput form-control tableInputHeader py-1 text-left mt-2">Notes</div>
+                    </td>
+                    <td class="colw-6 text-left" colspan="8"><input type="text"
+                        class="form-control tableInput text-left mt-2" value="" placeholder="Notes">
+                    </td>
+
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-----third table section----->
+          <div class="tableSection">
+            <div class="d-flex justify-content-between align-items-center  py-2 mb-2">
+              <div class="font-weight-medium font-16"><i class="fa-regular fa-buildings mr-1 "></i> Pinnacle-United
+                Airlines, Inc. <span class="text-black">- CW 56667 Platform Operations Data & Process Analysts Managed
+                </span></div>
+              <div class="text-right">
+                <button class="m-0 p-0 border-0 bg-none switch-slider-input">Last timesheet
+                  <label class="switch m-0 mr-3">
+                    <input type="checkbox" checked>
+                    <span class="slider round has-tickmark"><i class="fa-regular fa-check"></i></span>
+                  </label>
+                </button>
+                <button class="btn obtn obtn-sm obtn-outline mr-2">Standard</button>
+                <button class="btn obtn obtn-sm obtn-outline mr-2 mt-2 mt-xl-0">Clear</button>
+              </div>
+            </div>
+            <div class=" yellowStripSection flex-wrap mb-2">
+              <div class="d-flex border-bottom">
+                <div class="mb-2">
+                  <label class="mr-3 mb-0">Status</label>
+                  <span class="text-darktheme font-weight-medium">Active</span>
+                </div>
+                <span class="mx-3">|</span>
+                <div class="mb-2">
+                  <label class="mr-3 mb-0">Start Date</label>
+                  <span class="text-darktheme font-weight-medium">04/08/2024</span>
+                </div>
+                <span class="mx-3">|</span>
+                <div class="mb-2">
+                  <label class="mr-3 mb-0">End Date</label>
+                  <span class="text-darktheme font-weight-medium">04/08/2024</span>
+                </div>
+                <span class="mx-3">|</span>
+                <div class="mb-2">
+                  <label class="mr-3 mb-0">Term Date</label>
+                  <span class="text-darktheme font-weight-medium">04/08/2024</span>
+                </div>
+                <span class="mx-3">|</span>
+                <div class="mb-2">
+                  <label class="mr-3 mb-0">Offboarding Date</label>
+                  <span class="text-darktheme font-weight-medium">04/08/2024</span>
+                </div>
+                <span class="mx-3">|</span>
+                <div class="mb-2">
+                  <label class="mr-3 mb-0">City/State</label>
+                  <span class="text-darktheme font-weight-medium">Fairfax/Virginia</span>
+                </div>
+                <span class="mx-3">|</span>
+                <div class="mb-2">
+                  <label class="mr-3 mb-0">OT Allowed</label>
+                  <span class="text-darktheme font-weight-medium">Yes</span>
+                </div>
+              </div>
+              <!-- <span class="mx-3">|</span> -->
+              <div class="d-flex pt-2">
+                <div class="col-2 pl-0">
+                  <label class="mr-3 mb-0">Daily PO Type</label>
+                  <span class="text-darktheme font-weight-medium">- -</span>
+                </div>
+                <span class="mx-3">|</span>
+                <div class="col-2 pl-0">
+                  <label class="mr-3 mb-0">LOB</label>
+                  <span class="text-darktheme font-weight-medium">- -</span>
+                </div>
+                <span class="mx-3">|</span>
+                <div class="">
+                  <label class="mr-3 mb-0">Workflow Status</label>
+                  <span class="text-darktheme font-weight-medium">Completed</span>
+                </div>
+                <span class="mx-3">|</span>
+                <div class="">
+                  <label class="mr-3 mb-0">Bill Rate</label>
+                  <span class="text-darktheme font-weight-medium">$ 10.00 / hr</span>
+                </div>
+                <span class="mx-3">|</span>
+                <div class="">
+                  <label class="mr-3 mb-0">Pay Rate</label>
+                  <span class="text-darktheme font-weight-medium">$ 10:00/hr</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="table_wrap analysisTable table-responsive">
+              <table class="mb-3 table">
+                <thead>
+                  <tr>
+                    <th class="colw-6 text-center px-2" rowspan="2"></th>
+                    <th class="colw-6 text-center px-2 ">Sun</th>
+                    <th class="colw-6 text-center px-2">Mon</th>
+                    <th class="colw-6 text-center px-2">Tue</th>
+                    <th class="colw-6 text-center px-2">Wed</th>
+                    <th class="colw-6 text-center px-2">Thu</th>
+                    <th class="colw-6 text-center px-2">Fri</th>
+                    <th class="colw-6 text-center px-2">Sat</th>
+                    <th class="colw-6 text-center px-2">Total</th>
+                  </tr>
+                  <tr>
+                    <th class="colw-6 text-center px-2">1/7</th>
+                    <th class="colw-6 text-center px-2 ">2/7</th>
+                    <th class="colw-6 text-center px-2">3/7</th>
+                    <th class="colw-6 text-center px-2">4/7</th>
+                    <th class="colw-6 text-center px-2">5/7</th>
+                    <th class="colw-6 text-center px-2">6/7</th>
+                    <th class="colw-6 text-center px-2">7/7</th>
+                    <th class="colw-6 text-center px-2">Hours/Week</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="colw-6 text-left font-weight-medium px-0">
+                      <div class="tableInput form-control tableInputHeader py-1 text-left">ST</div>
+                    </td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput totalInput"
+                        value="0"></td>
+
+                  </tr>
+                  <tr>
+                    <td class="colw-6 text-left font-weight-medium px-0">
+                      <div class="tableInput form-control tableInputHeader py-1 text-left">OT</div>
+                    </td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput totalInput"
+                        value="0"></td>
+
+                  </tr>
+                  <tr>
+                    <td class="colw-6 text-left font-weight-medium px-0">
+                      <div class="tableInput form-control tableInputHeader py-1 text-left">DT</div>
+                    </td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput totalInput"
+                        value="0"></td>
+
+                  </tr>
+
+                  <tr>
+                    <td class="colw-6 text-left font-weight-medium px-0">
+                      <div class="tableInput form-control tableInputHeader py-1 text-left">TT</div>
+                    </td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput totalInput"
+                        value="0"></td>
+
+                  </tr>
+                  <tr>
+                    <td class="colw-6 text-left font-weight-medium px-0">
+                      <div class="tableInput form-control tableInputHeader py-1 text-left mt-2">Notes</div>
+                    </td>
+                    <td class="colw-6 text-left" colspan="8"><input type="text"
+                        class="form-control tableInput text-left mt-2" value="" placeholder="Notes">
+                    </td>
+
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-----third table section----->
+          <div class="tableSection borderTable my-3">
+
+
+            <div class="table_wrap analysisTable table-responsive">
+              <table class="mb-3 table">
+
+                <tbody>
+                  <tr>
+                    <td class="colw-6 text-left font-weight-medium px-0">
+                      <div class="tableInput form-control tableInputHeader py-1 text-left bg-dark">Lunch Break</div>
+                    </td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput totalInput"
+                        value="0"></td>
+
+                  </tr>
+                  <tr>
+                    <td class="colw-6 text-left font-weight-medium px-0">
+                      <div class="tableInput form-control tableInputHeader py-1 text-left bg-dark">Time-Off</div>
+                    </td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput totalInput"
+                        value="0"></td>
+
+                  </tr>
+                  <tr>
+                    <td class="colw-6 text-left font-weight-medium px-0">
+                      <div class="tableInput form-control tableInputHeader py-1 text-left bg-dark">Vacation</div>
+                    </td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput" value="0"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput totalInput"
+                        value="0"></td>
+
+                  </tr>
+                  <tr>
+                    <td class="colw-6 text-left font-weight-medium px-0">
+                      <div class="tableInput form-control tableInputHeader py-1 text-left bg-dark">Holiday</div>
+                    </td>
+                    <td class="colw-6 text-center"><input type="checkbox" class="checkit"></td>
+                    <td class="colw-6 text-center"><input type="checkbox" class="checkit"></td>
+                    <td class="colw-6 text-center"><input type="checkbox" class="checkit"></td>
+                    <td class="colw-6 text-center"><input type="checkbox" class="checkit"></td>
+                    <td class="colw-6 text-center"><input type="checkbox" class="checkit"></td>
+                    <td class="colw-6 text-center"><input type="checkbox" class="checkit"></td>
+                    <td class="colw-6 text-center"><input type="checkbox" class="checkit"></td>
+                    <td class="colw-6 text-center"><input type="text" class="form-control tableInput totalInput"
+                        value="0"></td>
+
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+
+          <div class="bottomSection pb-1">
+            <div class="d-flex justify-content-start">
+              <!-- <div class="d-flex">Is this your last timesheet on any current project?
+                <div class="form-check form-check-inline ml-3">
+                  <input class="form-check-input" type="radio" name="project" id="yes">
+                  <label class="form-check-label" for="yes">
+                    Yes
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="project" id="no" checked>
+                  <label class="form-check-label" for="no">
+                    No
+                  </label>
+                </div>
+              </div> -->
+              <div>Floating Holidays Taken (Weekendings) <span class="ml-4">04/08/2024</span></div>
+            </div>
+            <!-- <div class="mt-2 text-red font-weight-medium">
+              <span class="font-weight-bold">Note:</span> Please select “YES” for the last timesheet question above only
+              if this is your final timecard on a
+              current assignment and no further timecards are to be submitted on the project.
+            </div> -->
+            <div class="d-flex justify-content-between mt-3">
+              <div>
+                <label for="" class="mb-1">Weekend Hours</label><br>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Confirm - Did not work on weekend
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    Wait possibility of weekend hours
+                  </label>
+                </div>
+              </div>
+              <div class="col-3 pr-0">Select the reason
+                <div class="form-group m-0">
+                  <span class="has-icon">
+                    <select class="form-control required px-2 py-2" name="" id="SelectDocument">
+                      <option value="">Internal Team</option>
+                      <option value="">As per Conversation</option>
+                      <option value="">Approved on Client Site</option>
+                      <option value="">Payroll Impacted</option>
+                      <option value="">Payroll Not Impacted</option>
+                    </select>
+                    <i class="con fa-regular fa-angle-down pr-2"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-end my-4">
+              <button class="btn obtn obtn-sm obtn-outline ml-2 mr-2">View Email</button>
+              <span class="mx-2">|</span>
+              <button class="btn obtn obtn-secondary mr-3 obtn-sm ml-2">Cancel</button>
+              <button class="btn obtn obtn-themebtn obtn-sm" data-toggle="modal"
+                data-target="#pmconfirmationModal">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+
+
+  <!--Project Manager Confirmation Modal -->
+  <div class="modal fade" id="pmconfirmationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Project Manager Confirmation</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="mt-2">
+            <div class="d-flex flex-wrap">
+              <div class="col-lg-6 pl-0">
+                <label for="">Manager Name</label>
+                <input type="text" class="form-control" placeholder="Manager Name">
+              </div>
+              <div class="col-lg-6 pr-0">
+                <label for="">Manager Email ID</label>
+                <input type="text" class="form-control" placeholder="Manager Email ID">
+              </div>
+              <div class="col-lg-6 mt-2 pl-0">
+                <input type="checkbox" class="checkit mt-2" name="Manager">
+                <label for="">Send Email to Manager</label>
+              </div>
+            </div>
+            <div class="mt-2 text-red font-weight-medium">
+              <span class="font-weight-bold">Note:</span> This is the email address where the project manager will
+              receive an email link to review and verify your timecard
+            </div>
+            <div class="mt-2 text-darktheme">If you have any questions or concerns, please contact your Ascendion
+              Relationship Manager.
+            </div>
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <div class="d-flex justify-content-end"><button class="btn obtn obtn-secondary mr-3 ml-2">Cancel</button>
+            <button class="btn obtn obtn-themebtn">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
